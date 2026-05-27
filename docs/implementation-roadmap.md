@@ -84,7 +84,7 @@
 }
 ```
 
-**数据来源**：搜"美国 Beers 标准 2023""中国老年人潜在不适当用药目录""老年人药物相互作用"，手工摘录。
+**数据来源**：优先参考 `docs/medication-safety-knowledge-sources.md` 中整理的 PIM-China、AGS Beers、STOPP/START、WHO、DailyMed、RxNorm、DDInter、ISMP 等来源，手工摘录并保留来源链接。
 
 高频药物清单（优先整理这些相关的组合）：
 - 阿司匹林、华法林、氯吡格雷（抗凝血类）

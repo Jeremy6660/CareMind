@@ -34,6 +34,7 @@ CareMind 聚焦于**养老院与居家照护场景**，通过 AI Agent 的协同
 
 - **系统设计详解**：[docs/system-design.md](docs/system-design.md)
 - **理论与政策背景**：[docs/background.md](docs/background.md)
+- **用药安全知识库来源**：[docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
 - **三月执行路线**：见系统设计文档第八章
 - **项目规则与开发说明**：[CLAUDE.md](CLAUDE.md)
 
@@ -48,7 +49,8 @@ E:/CHALLENGE/
 ├── docs/
 │   ├── system-design.md         ← 系统架构与三大Agent详细设计
 │   ├── background.md            ← 理论基础、政策背景、行业痛点
-│   └── implementation-roadmap.md ← 技术栈与执行计划
+│   ├── implementation-roadmap.md ← 技术栈与执行计划
+│   └── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源
 ├── background_and_knowledge/    ← 原始理论输入（保留用作参考）
 └── new_help/                    ← 工具使用指南（安装、配置等）
 ```
@@ -82,6 +84,7 @@ E:/CHALLENGE/
 1. 阅读 [docs/system-design.md](docs/system-design.md) 了解系统设计全景
 2. 阅读 [CLAUDE.md](CLAUDE.md) 了解项目规则与开发流程
 3. 如需理论背景支撑，参考 [docs/background.md](docs/background.md)
+4. 筹备用药安全数据时，先阅读 [docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
 
 ---
 

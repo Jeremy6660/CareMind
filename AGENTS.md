@@ -47,20 +47,20 @@
 ```
 E:/CHALLENGE/
 ├── README.md                      ← 新接手者的一入口
-├── CLAUDE.md                      ← 你现在看的，规则手册
+├── AGENTS.md                      ← 你现在看的，规则手册
 ├── docs/
 │   ├── system-design.md           ← 核心：系统架构、三大Agent、个性化机制、技术栈、执行路线
 │   ├── background.md              ← 参考：理论支撑、政策背景、行业痛点
 │   ├── implementation-roadmap.md  ← 详细：按月的里程碑计划
 │   └── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源与录入规范
 ├── background_and_knowledge/      ← 原始资料（保留用作参考，不参与开发）
-└── new_help/                      ← 工具指南（VS Code/Git/Claude Code安装等，不属于项目核心）
+└── new_help/                      ← 工具指南（VS Code/Git/Codex安装等，不属于项目核心）
 ```
 
 ### 文档所有权与更新责任
 
 - **README.md**：项目概览与导航，保持最新
-- **CLAUDE.md**：项目规则，新增规则/约束立即同步，不要拖延
+- **AGENTS.md**：项目规则，新增规则/约束立即同步，不要拖延
 - **docs/system-design.md**：系统设计的单一真实来源（SSOT），任何架构改动必须体现在这里
 - **docs/background.md**：理论与政策背景，通常不变，除非发现过期或误导信息
 - **docs/medication-safety-knowledge-sources.md**：Agent 2 用药安全知识库来源、字段模板与审核流程，新增医学/药学来源时优先更新这里
@@ -194,7 +194,7 @@ code/
 - 7月初：Agent开发环境搭建
 
 **问题或建议**：
-- 系统设计有调整？更新 `docs/system-design.md` 并同步 `CLAUDE.md`
+- 系统设计有调整？更新 `docs/system-design.md` 并同步 `AGENTS.md`
 - 发现过期信息？立即修正，不要留着误导后来者
 - 文档不够清晰？补充说明，记住新接手者可能不熟悉养老行业
 
