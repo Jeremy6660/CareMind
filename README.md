@@ -35,22 +35,25 @@ CareMind 聚焦于**养老院与居家照护场景**，通过 AI Agent 的协同
 - **系统设计详解**：[docs/system-design.md](docs/system-design.md)
 - **理论与政策背景**：[docs/background.md](docs/background.md)
 - **用药安全知识库来源**：[docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
-- **三月执行路线**：见系统设计文档第八章
-- **项目规则与开发说明**：[CLAUDE.md](CLAUDE.md)
+- **三月执行路线**：[docs/implementation-roadmap.md](docs/implementation-roadmap.md)
+- **4人团队分工**：[docs/team/](docs/team/)
+- **项目规则与开发说明**：[AGENTS.md](AGENTS.md) / [CLAUDE.md](CLAUDE.md)
 
 ---
 
 ## 项目结构
 
 ```
-E:/CHALLENGE/
+E:/CareMind/
 ├── README.md                    ← 你在这里
+├── AGENTS.md                    ← Codex/通用 Agent 项目规则手册
 ├── CLAUDE.md                    ← 项目规则手册
 ├── docs/
 │   ├── system-design.md         ← 系统架构与三大Agent详细设计
 │   ├── background.md            ← 理论基础、政策背景、行业痛点
 │   ├── implementation-roadmap.md ← 技术栈与执行计划
-│   └── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源
+│   ├── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源
+│   └── team/                    ← A/B/C/D 四名成员的详细分工文档
 ├── background_and_knowledge/    ← 原始理论输入（保留用作参考）
 └── new_help/                    ← 工具使用指南（安装、配置等）
 ```
@@ -70,22 +73,22 @@ E:/CHALLENGE/
 
 | 组件 | 推荐方案 |
 |------|---------|
-| 多Agent框架 | LangGraph / AutoGen |
-| 大语言模型 | GPT-4o / Qwen2.5 |
-| 知识库检索 | RAG（LlamaIndex + 向量数据库） |
-| 用户画像存储 | MongoDB |
-| 前端交互 | 微信小程序 / Web |
-| 语音与方言 | 阿里云语音TTS |
+| LLM 调用 | 直接调 API（Claude / GPT-4o / Qwen / DeepSeek 均可） |
+| 知识库 | JSON 文件 + 关键词匹配 |
+| 用户画像 | JSON 文件存储 |
+| 前端 Demo | Gradio / Streamlit |
+| 语音与方言 | 后期可选集成，6-7 月不做 |
 
 ---
 
 ## 下一步
 
 1. 阅读 [docs/system-design.md](docs/system-design.md) 了解系统设计全景
-2. 阅读 [CLAUDE.md](CLAUDE.md) 了解项目规则与开发流程
-3. 如需理论背景支撑，参考 [docs/background.md](docs/background.md)
-4. 筹备用药安全数据时，先阅读 [docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
+2. 阅读 [docs/implementation-roadmap.md](docs/implementation-roadmap.md) 了解三个月执行节奏
+3. 按成员阅读 [docs/team/](docs/team/) 下的个人分工文档
+4. 阅读 [AGENTS.md](AGENTS.md) / [CLAUDE.md](CLAUDE.md) 了解项目规则与开发流程
+5. 筹备用药安全数据时，先阅读 [docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
 
 ---
 
-**项目状态**：建档阶段 · 课题制 · 2026年9月前交付
+**项目状态**：建档与规划阶段 · 4人小组分工已拆分 · 2026年9月前交付

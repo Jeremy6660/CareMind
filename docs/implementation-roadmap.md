@@ -13,6 +13,13 @@
 | **C** | Agent 3 家属沟通 | 5 组报告模板 + 老人画像 JSON + Python 函数 | 文字表达好、能设计 Prompt |
 | **D** | 集成 + 前端 + 答辩 | Gradio 界面 + 系统串联 + 报告 + PPT | 能读代码、能做 PPT |
 
+成员个人详细任务、阶段要求和验收标准见 `docs/team/`：
+
+- A：[member-a-triage.md](team/member-a-triage.md)
+- B：[member-b-medication-safety.md](team/member-b-medication-safety.md)
+- C：[member-c-family-communication.md](team/member-c-family-communication.md)
+- D：[member-d-integration-delivery.md](team/member-d-integration-delivery.md)
+
 ---
 
 ## 技术栈（降级到最简）
@@ -59,7 +66,7 @@
   "name": "张奶奶",
   "age": 77,
   "cognitive_level": "正常",
-  "symptoms": "今天早上起来说头晕，走路有点飘，早餐吃了半碗粥就说不想吃了",
+  "symptoms": "2026-06-08 早上起来说头晕，走路有点飘，早餐吃了半碗粥就说不想吃了",
   "history": "高血压 10 年，平时血压控制在 140/85 左右",
   "expected_risk": "黄色",
   "expected_action": "建议测血压，观察 2 小时，如持续头晕联系医生"
@@ -371,7 +378,7 @@ def run_caremind(elder_id, input_data):
 
 | 时间 | 事项 |
 |------|------|
-| 每周一 10:00 | 15 分钟站会：每人说"上周做了什么、这周要做什么、有没有卡住" |
+| 每周一 10:00 | 15 分钟站会：每人说"上一周期完成了什么、本周期要做什么、有没有卡住" |
 | 每周五 17:00 | 把本周产出推到 Git，commit message 写清楚 |
 | 每月最后一天 | 对照月底验收标准逐项打勾 |
 

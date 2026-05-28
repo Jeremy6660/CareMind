@@ -45,14 +45,15 @@
 ### 这个仓库的文档按这样组织：
 
 ```
-E:/CHALLENGE/
+E:/CareMind/
 ├── README.md                      ← 新接手者的一入口
 ├── AGENTS.md                      ← 你现在看的，规则手册
 ├── docs/
 │   ├── system-design.md           ← 核心：系统架构、三大Agent、个性化机制、技术栈、执行路线
 │   ├── background.md              ← 参考：理论支撑、政策背景、行业痛点
 │   ├── implementation-roadmap.md  ← 详细：按月的里程碑计划
-│   └── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源与录入规范
+│   ├── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源与录入规范
+│   └── team/                      ← A/B/C/D 四名成员的详细分工与验收要求
 ├── background_and_knowledge/      ← 原始资料（保留用作参考，不参与开发）
 └── new_help/                      ← 工具指南（VS Code/Git/Codex安装等，不属于项目核心）
 ```
@@ -64,6 +65,7 @@ E:/CHALLENGE/
 - **docs/system-design.md**：系统设计的单一真实来源（SSOT），任何架构改动必须体现在这里
 - **docs/background.md**：理论与政策背景，通常不变，除非发现过期或误导信息
 - **docs/medication-safety-knowledge-sources.md**：Agent 2 用药安全知识库来源、字段模板与审核流程，新增医学/药学来源时优先更新这里
+- **docs/team/**：4人小组个人分工、阶段任务、验收标准；成员职责变化时同步更新
 - **background_and_knowledge/**：只读参考，不主动维护
 - **new_help/**：工具指南，可能需要后期整理或移出
 
@@ -82,7 +84,7 @@ code/
 │   ├── medication_safety/   ← Agent 2：用药安全
 │   └── family_communication/← Agent 3：家属沟通
 ├── orchestrator/            ← 中央调度：共享记忆、冲突仲裁
-├── knowledge_base/          ← RAG知识库：老年医学指南、政策文本、禁忌数据库
+├── knowledge_base/          ← JSON知识库：老年医学指南、政策文本、禁忌数据库
 ├── user_profile/            ← 用户画像模块：认知评级、方言、病史、关系图谱
 └── tests/                   ← 单元测试与集成测试
 ```
@@ -106,9 +108,9 @@ code/
   "docs: 更新系统设计文档的Agent2部分"
   ```
 
-### 知识库与RAG
+### 知识库与数据来源
 
-知识库来源（需在6月底前完成筹建）：
+本阶段采用 JSON 文件 + 关键词匹配的极简知识库方案，知识来源需在6月底前完成筹建：
 
 - **中国老年医学临床指南**（中华医学会）
 - **国家长期护理保险文本**（医保部门）
@@ -178,6 +180,7 @@ code/
 | 个性化生成机制怎么实现 | [docs/system-design.md](docs/system-design.md) §五 |
 | 技术栈与推荐工具 | [docs/system-design.md](docs/system-design.md) §六 |
 | 三个月的月度里程碑 | [docs/system-design.md](docs/system-design.md) §八 |
+| 4人小组个人分工与验收要求 | [docs/team/](docs/team/) |
 | 理论与政策背景（为什么做这个） | [docs/background.md](docs/background.md) |
 | 养老行业的真实痛点 | [docs/background.md](docs/background.md) §四 |
 | Agent 2用药安全知识库来源与字段模板 | [docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md) |
@@ -186,7 +189,7 @@ code/
 
 ## 项目状态与联系
 
-**当前阶段**：建档与规划（5月27日）
+**当前阶段**：建档与规划（2026-05-28）
 
 **下一个里程碑**：
 - 6月初：完成需求分析与架构设计最终确认
@@ -200,4 +203,4 @@ code/
 
 ---
 
-*本手册最后更新于 2026-05-27 · CareMind 项目组*
+*本手册最后更新于 2026-05-28 · CareMind 项目组*
