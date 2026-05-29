@@ -10,10 +10,13 @@
 
 ## 项目背景
 
-中国失能与半失能老人照护面临三重结构性困境：
+中国失能与半失能老人照护正面临更深层的结构性压力。根据当前项目已整理的原始行业材料，2025 年末全国 60 岁及以上人口已达 3.23 亿，占总人口 23.0%；其中 65 岁及以上人口 2.24 亿，占比 15.9%，失能、半失能老人规模已超过 4500 万。
+
+在这样的背景下，照护一线同时承受多重难题：
 - **信息孤岛**：病历、用药、日常状态分散，照护人员难以整合
 - **沟通断层**：医疗信息与家属认知存在鸿沟，家属长期"不知情"
 - **个性缺失**：现有系统采用打勾式标准化记录，忽视老人的个体差异需求
+- **人才短缺与支付压力**：护理员供给紧张、专业训练不足，而多数家庭又难以承担高质量机构照护费用
 
 CareMind 聚焦于**养老院与居家照护场景**，通过 AI Agent 的协同，在**数字层面实现"医养结合"** —— 即便现实中的行政体制尚未打通。
 
@@ -34,6 +37,7 @@ CareMind 聚焦于**养老院与居家照护场景**，通过 AI Agent 的协同
 
 - **系统设计详解**：[docs/system-design.md](docs/system-design.md)
 - **理论与政策背景**：[docs/background.md](docs/background.md)
+- **行业研究与痛点整理**：[docs/industry-research.md](docs/industry-research.md)
 - **用药安全知识库来源**：[docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
 - **三月执行路线**：[docs/implementation-roadmap.md](docs/implementation-roadmap.md)
 - **4人团队分工**：[docs/team/](docs/team/)
@@ -44,17 +48,18 @@ CareMind 聚焦于**养老院与居家照护场景**，通过 AI Agent 的协同
 ## 项目结构
 
 ```
-E:/CareMind/
+CareMind/
 ├── README.md                    ← 你在这里
 ├── AGENTS.md                    ← Codex/通用 Agent 项目规则手册
 ├── CLAUDE.md                    ← 项目规则手册
 ├── docs/
 │   ├── system-design.md         ← 系统架构与三大Agent详细设计
 │   ├── background.md            ← 理论基础、政策背景、行业痛点
+│   ├── industry-research.md     ← 最新行业数据、现实约束与痛点整理
 │   ├── implementation-roadmap.md ← 技术栈与执行计划
 │   ├── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源
 │   └── team/                    ← A/B/C/D 四名成员的详细分工文档
-├── background_and_knowledge/    ← 原始理论输入（保留用作参考）
+├── background_and_knowledge_raw/ ← 原始理论输入（保留用作参考）
 └── new_help/                    ← 工具使用指南（安装、配置等）
 ```
 
@@ -84,11 +89,12 @@ E:/CareMind/
 ## 下一步
 
 1. 阅读 [docs/system-design.md](docs/system-design.md) 了解系统设计全景
-2. 阅读 [docs/implementation-roadmap.md](docs/implementation-roadmap.md) 了解三个月执行节奏
-3. 按成员阅读 [docs/team/](docs/team/) 下的个人分工文档
-4. 阅读 [AGENTS.md](AGENTS.md) / [CLAUDE.md](CLAUDE.md) 了解项目规则与开发流程
-5. 筹备用药安全数据时，先阅读 [docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
+2. 阅读 [docs/industry-research.md](docs/industry-research.md) 了解最新行业数据与项目问题锚点
+3. 阅读 [docs/implementation-roadmap.md](docs/implementation-roadmap.md) 了解三个月执行节奏
+4. 按成员阅读 [docs/team/](docs/team/) 下的个人分工文档
+5. 阅读 [AGENTS.md](AGENTS.md) / [CLAUDE.md](CLAUDE.md) 了解项目规则与开发流程
+6. 筹备用药安全数据时，先阅读 [docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
 
 ---
 
-**项目状态**：建档与规划阶段 · 4人小组分工已拆分 · 2026年9月前交付
+**项目状态**：建档与规划阶段 · 4人小组分工已拆分 · 2026-05-30 · 2026年9月前交付
