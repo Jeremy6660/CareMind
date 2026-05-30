@@ -41,6 +41,7 @@ CareMind 聚焦于**养老院与居家照护场景**，通过 AI Agent 的协同
 - **用药安全知识库来源**：[docs/medication-safety-knowledge-sources.md](docs/medication-safety-knowledge-sources.md)
 - **三月执行路线**：[docs/implementation-roadmap.md](docs/implementation-roadmap.md)
 - **4人团队分工**：[docs/team/](docs/team/)
+- **知识图谱与可视化产物**：[graphify-out/graph.html](graphify-out/graph.html) / [graphify-out/GRAPH_REPORT.md](graphify-out/GRAPH_REPORT.md)
 - **项目规则与开发说明**：[AGENTS.md](AGENTS.md) / [CLAUDE.md](CLAUDE.md)
 
 ---
@@ -60,8 +61,11 @@ CareMind/
 │   ├── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源
 │   └── team/                    ← A/B/C/D 四名成员的详细分工文档
 ├── background_and_knowledge_raw/ ← 原始理论输入（保留用作参考）
+├── graphify-out/                ← 知识图谱产物（graph.html / GRAPH_REPORT.md / graph.json）
 └── new_help/                    ← 工具使用指南（安装、配置等）
 ```
+
+> 图谱和图表默认使用中文输出；如需重新生成知识图谱，优先保持 `graphify-out/` 中的标题、图例、节点名和说明为中文。
 
 ---
 

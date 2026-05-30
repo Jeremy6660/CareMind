@@ -47,6 +47,7 @@
 ```
 CareMind/
 ├── README.md                      ← 新接手者的一入口
+├── AGENTS.md                      ← Codex / 通用规则镜像
 ├── CLAUDE.md                      ← 你现在看的，规则手册
 ├── docs/
 │   ├── system-design.md           ← 核心：系统架构、三大Agent、个性化机制、技术栈、执行路线
@@ -56,6 +57,7 @@ CareMind/
 │   ├── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源与录入规范
 │   └── team/                      ← A/B/C/D 四名成员的详细分工与验收要求
 ├── background_and_knowledge_raw/   ← 原始资料（保留用作参考，不参与开发）
+├── graphify-out/                  ← 知识图谱产物（graph.html / GRAPH_REPORT.md / graph.json / manifest.json / cost.json）
 └── new_help/                      ← 工具指南（VS Code/Git/Claude Code安装等，不属于项目核心）
 ```
 
@@ -69,6 +71,7 @@ CareMind/
 - **docs/medication-safety-knowledge-sources.md**：Agent 2 用药安全知识库来源、字段模板与审核流程，新增医学/药学来源时优先更新这里
 - **docs/team/**：4人小组个人分工、阶段任务、验收标准；成员职责变化时同步更新
 - **background_and_knowledge_raw/**：只读参考，不主动维护
+- **graphify-out/**：知识图谱生成产物目录；`graph.html`、`GRAPH_REPORT.md`、`graph.json` 面向浏览与交接，`manifest.json`、`cost.json` 为生成元数据；重新生成时保持中文输出
 - **new_help/**：工具指南，可能需要后期整理或移出
 
 ---
@@ -96,6 +99,7 @@ code/
 - 函数名：英文下划线 snake_case（例 `generate_triage_report`）
 - 文件名：英文下划线 snake_case
 - 注释：中文注释可接受，重点是"为什么"而非"是什么"
+- 图表与可视化：默认全部使用中文输出，包括标题、图例、节点名、坐标轴、注释与说明；除非明确要求英文
 - 类名：PascalCase
 
 ### 版本控制

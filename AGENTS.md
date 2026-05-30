@@ -48,6 +48,7 @@
 CareMind/
 ├── README.md                      ← 新接手者的一入口
 ├── AGENTS.md                      ← 你现在看的，规则手册
+├── CLAUDE.md                      ← Claude / 通用规则镜像
 ├── docs/
 │   ├── system-design.md           ← 核心：系统架构、三大Agent、个性化机制、技术栈、执行路线
 │   ├── background.md              ← 参考：理论支撑、政策背景、行业痛点
@@ -56,6 +57,7 @@ CareMind/
 │   ├── medication-safety-knowledge-sources.md ← Agent 2用药安全知识库来源与录入规范
 │   └── team/                      ← A/B/C/D 四名成员的详细分工与验收要求
 ├── background_and_knowledge_raw/   ← 原始资料（保留用作参考，不参与开发）
+├── graphify-out/                  ← 知识图谱产物（graph.html / GRAPH_REPORT.md / graph.json / manifest.json / cost.json）
 └── new_help/                      ← 工具指南（VS Code/Git/Codex安装等，不属于项目核心）
 ```
 
@@ -69,6 +71,7 @@ CareMind/
 - **docs/medication-safety-knowledge-sources.md**：Agent 2 用药安全知识库来源、字段模板与审核流程，新增医学/药学来源时优先更新这里
 - **docs/team/**：4人小组个人分工、阶段任务、验收标准；成员职责变化时同步更新
 - **background_and_knowledge_raw/**：只读参考，不主动维护
+- **graphify-out/**：知识图谱生成产物目录；`graph.html`、`GRAPH_REPORT.md`、`graph.json` 面向浏览与交接，`manifest.json`、`cost.json` 为生成元数据；重新生成时保持中文输出
 - **new_help/**：工具指南，可能需要后期整理或移出
 
 ---
@@ -96,6 +99,7 @@ code/
 - 函数名：英文下划线 snake_case（例 `generate_triage_report`）
 - 文件名：英文下划线 snake_case
 - 注释：中文注释可接受，重点是"为什么"而非"是什么"
+- 图表与可视化：默认全部使用中文输出，包括标题、图例、节点名、坐标轴、注释与说明；除非明确要求英文
 - 类名：PascalCase
 
 ### 版本控制
@@ -207,3 +211,16 @@ code/
 ---
 
 *本手册最后更新于 2026-05-30 · CareMind 项目组*
+
+## graphify
+
+本项目已经生成知识图谱，产物位于 `graphify-out/`，包含高连接节点、社区结构与跨文档关系。
+
+当用户输入 `/graphify` 时，先调用 `skill` 工具并传入 `skill: "graphify"`，再做其他动作。
+
+Rules:
+- 遇到代码库问题时，如果 `graphify-out/graph.json` 存在，先运行 `graphify query "<问题>"`。查关系用 `graphify path "<A>" "<B>"`，查单个概念用 `graphify explain "<概念>"`。这些命令会返回聚焦后的子图，通常比直接读 `GRAPH_REPORT.md` 或全仓库检索更高效。
+- `graphify-out/` 在 hook 或增量更新后处于 dirty 状态是正常现象，不要因此跳过 graphify。只有当任务本身就是排查图谱过期、错误，或用户明确说不要用 graphify 时，才跳过。
+- 如果存在 `graphify-out/wiki/index.md`，优先用它做广义导航，而不是直接翻源码。
+- 只有在做宏观架构审查，或 `query` / `path` / `explain` 还不够时，才去读 `graphify-out/GRAPH_REPORT.md`。
+- 修改代码后运行 `graphify update .` 保持图谱最新；这是 AST-only 更新，不需要额外 API 成本。

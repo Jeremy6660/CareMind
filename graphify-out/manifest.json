@@ -1,0 +1,102 @@
+{
+  "/Users/xuyunze/Documents/CareMind/\u9879\u76ee\u5168\u9762\u8bc4\u4f30_2026-05-29_00-08.md": {
+    "mtime": 1780074348.7055402,
+    "ast_hash": "ceb847671c10954b86744bb3ed16eab9",
+    "semantic_hash": "ceb847671c10954b86744bb3ed16eab9"
+  },
+  "/Users/xuyunze/Documents/CareMind/README.md": {
+    "mtime": 1780075525.5413659,
+    "ast_hash": "e751dc5120dce158e84f6ca3efd2e759",
+    "semantic_hash": "e751dc5120dce158e84f6ca3efd2e759"
+  },
+  "/Users/xuyunze/Documents/CareMind/AGENTS.md": {
+    "mtime": 1780075525.589739,
+    "ast_hash": "5623ab8d3d9a92f206c3236cb48bdd1a",
+    "semantic_hash": "5623ab8d3d9a92f206c3236cb48bdd1a"
+  },
+  "/Users/xuyunze/Documents/CareMind/CLAUDE.md": {
+    "mtime": 1780075525.6377242,
+    "ast_hash": "64b8e7dba40ef4a62df3bf0a8da15de3",
+    "semantic_hash": "64b8e7dba40ef4a62df3bf0a8da15de3"
+  },
+  "/Users/xuyunze/Documents/CareMind/new_help/git\u5b89\u88c5\u4e0e\u4f7f\u7528\u6307\u5357.md": {
+    "mtime": 1779984171.5488324,
+    "ast_hash": "2feeab7a79375741c62091dec280cdaf",
+    "semantic_hash": "2feeab7a79375741c62091dec280cdaf"
+  },
+  "/Users/xuyunze/Documents/CareMind/new_help/claudecode\u5b89\u88c5\u6307\u5357.md": {
+    "mtime": 1779984171.5486112,
+    "ast_hash": "23d5b7aedb55ac12c0383064ed5c6c7c",
+    "semantic_hash": "23d5b7aedb55ac12c0383064ed5c6c7c"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/medication-safety-knowledge-sources.md": {
+    "mtime": 1780075525.835437,
+    "ast_hash": "f619525ac634ef2686f35de10fdbe152",
+    "semantic_hash": "f619525ac634ef2686f35de10fdbe152"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/industry-research.md": {
+    "mtime": 1780075525.784078,
+    "ast_hash": "97aac4a4ce6396fb84cb0d9c1014f8c2",
+    "semantic_hash": "97aac4a4ce6396fb84cb0d9c1014f8c2"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/system-design.md": {
+    "mtime": 1780075525.7338996,
+    "ast_hash": "70a28bf161772df97e985264c9ab604a",
+    "semantic_hash": "70a28bf161772df97e985264c9ab604a"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/implementation-roadmap.md": {
+    "mtime": 1779984171.5473285,
+    "ast_hash": "7df34382a8bee8ba8cf0a4b985707105",
+    "semantic_hash": "7df34382a8bee8ba8cf0a4b985707105"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/background.md": {
+    "mtime": 1780075525.6864944,
+    "ast_hash": "dbd0af67bf6d27a863a0d73c58bba69b",
+    "semantic_hash": "dbd0af67bf6d27a863a0d73c58bba69b"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/team/member-c-family-communication.md": {
+    "mtime": 1780074324.3171504,
+    "ast_hash": "381c24ca90443467688e42e44409b0ed",
+    "semantic_hash": "381c24ca90443467688e42e44409b0ed"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/team/member-b-medication-safety.md": {
+    "mtime": 1779984171.548056,
+    "ast_hash": "c9b482d62ecfd95b0b93ca6672956c04",
+    "semantic_hash": "c9b482d62ecfd95b0b93ca6672956c04"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/team/member-a-triage.md": {
+    "mtime": 1779984171.5478976,
+    "ast_hash": "2c18e99b0b0e7a8fc7a73f2cb4fc9b37",
+    "semantic_hash": "2c18e99b0b0e7a8fc7a73f2cb4fc9b37"
+  },
+  "/Users/xuyunze/Documents/CareMind/docs/team/member-d-integration-delivery.md": {
+    "mtime": 1779984171.5483649,
+    "ast_hash": "7b610c72ce84becb9b6a6f0c67c13967",
+    "semantic_hash": "7b610c72ce84becb9b6a6f0c67c13967"
+  },
+  "/Users/xuyunze/Documents/CareMind/background_and_knowledge_raw/\u4e2d\u56fd\u8001\u9f84\u5316\u4e0e\u517b\u8001\u884c\u4e1a\u6df1\u5ea6\u7814\u7a76\u62a5\u544a.md": {
+    "mtime": 1780074102.309434,
+    "ast_hash": "1c02b47348368ad60ab6074925fc02e0",
+    "semantic_hash": "1c02b47348368ad60ab6074925fc02e0"
+  },
+  "/Users/xuyunze/Documents/CareMind/background_and_knowledge_raw/\u653f\u7b56\u4e0e\u80cc\u666f.md": {
+    "mtime": 1779984171.5467007,
+    "ast_hash": "15ca33dd2bcc160c166c1eb6fc57667e",
+    "semantic_hash": "15ca33dd2bcc160c166c1eb6fc57667e"
+  },
+  "/Users/xuyunze/Documents/CareMind/background_and_knowledge_raw/\u8001\u5e74\u7167\u62a4\u591a\u667a\u80fd\u4f53\u7cfb\u7edf\u65b9\u6848.md": {
+    "mtime": 1779984171.5468867,
+    "ast_hash": "1582ddebf38bd97bd51057c1918d0ae6",
+    "semantic_hash": "1582ddebf38bd97bd51057c1918d0ae6"
+  },
+  "/Users/xuyunze/Documents/CareMind/background_and_knowledge_raw/\u8001\u9f84\u5316\u75db\u70b9.txt": {
+    "mtime": 1780074177.2070966,
+    "ast_hash": "e0291ed2b1bed39b0b37988b2c220853",
+    "semantic_hash": "e0291ed2b1bed39b0b37988b2c220853"
+  },
+  "/Users/xuyunze/Documents/CareMind/background_and_knowledge_raw/knowledge.md": {
+    "mtime": 1779984171.5464933,
+    "ast_hash": "cee46dc584bc1d87660a0af8f7ed2e47",
+    "semantic_hash": "cee46dc584bc1d87660a0af8f7ed2e47"
+  }
+}
